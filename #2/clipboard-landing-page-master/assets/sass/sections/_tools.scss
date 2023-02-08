@@ -1,0 +1,28 @@
+.tools{
+    @include section-flex;
+    @include title-and-description(36px, 50%);
+
+    .card_wrapper{
+        display: flex;
+        width: 90%;
+        
+        .card{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            flex: 3;
+
+            &_icon{
+                color: $grayishBlue;
+                font-size: 36px;
+            }
+
+            @include title-and-description(24px, 100%);
+
+        }
+
+        @media (max-width: 1280px) {
+            flex-direction: column;
+        }
+    }
+}

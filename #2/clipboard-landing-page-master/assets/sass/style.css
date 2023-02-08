@@ -1,0 +1,505 @@
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/**
+Use a more readable tab size (opinionated).
+*/
+html {
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/*
+Sections
+========
+*/
+/**
+Remove the margin in all browsers.
+*/
+body {
+  margin: 0;
+}
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/*
+Grouping content
+================
+*/
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding-top: 100px;
+  text-align: center;
+}
+.header_title {
+  font-weight: 600;
+  font-size: 36px;
+  color: hsl(210deg, 10%, 33%);
+}
+.header_description {
+  color: hsl(201deg, 11%, 66%);
+  width: 50%;
+}
+.header .btns {
+  display: flex;
+  gap: 20px;
+}
+.header .btns .btn {
+  width: 250px;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  border-radius: 40px;
+}
+.header .btns .btn-green {
+  background-color: hsl(171deg, 66%, 44%);
+  box-shadow: 1px 1px 5px hsla(171deg, 66%, 44%, 0.7);
+}
+.header .btns .btn-green:hover {
+  cursor: pointer;
+  background-color: hsla(171deg, 66%, 44%, 0.7);
+}
+.header .btns .btn-purple {
+  background-color: hsl(233deg, 100%, 69%);
+  box-shadow: 1px 1px 5px hsla(233deg, 100%, 69%, 0.7);
+}
+.header .btns .btn-purple:hover {
+  cursor: pointer;
+  background-color: hsla(233deg, 100%, 69%, 0.7);
+}
+
+@media (max-width: 1280px) {
+  .header {
+    background-color: red;
+  }
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding-top: 100px;
+  text-align: center;
+}
+.about_title {
+  font-weight: 600;
+  font-size: 36px;
+  color: hsl(210deg, 10%, 33%);
+}
+.about_description {
+  color: hsl(201deg, 11%, 66%);
+  width: 50%;
+}
+.about_container {
+  display: flex;
+  gap: 100px;
+}
+.about .text-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.about .text-part .card {
+  text-align: center;
+  text-align: left;
+}
+.about .text-part .card_title {
+  font-weight: 600;
+  font-size: 24px;
+  color: hsl(210deg, 10%, 33%);
+}
+.about .text-part .card_description {
+  color: hsl(201deg, 11%, 66%);
+  width: 70%;
+}
+
+.accessibility {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding-top: 100px;
+  text-align: center;
+}
+.accessibility_title {
+  font-weight: 600;
+  font-size: 36px;
+  color: hsl(210deg, 10%, 33%);
+}
+.accessibility_description {
+  color: hsl(201deg, 11%, 66%);
+  width: 50%;
+}
+
+.tools {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding-top: 100px;
+  text-align: center;
+}
+.tools_title {
+  font-weight: 600;
+  font-size: 36px;
+  color: hsl(210deg, 10%, 33%);
+}
+.tools_description {
+  color: hsl(201deg, 11%, 66%);
+  width: 50%;
+}
+.tools .card_wrapper {
+  display: flex;
+  width: 90%;
+}
+.tools .card_wrapper .card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 3;
+  text-align: center;
+}
+.tools .card_wrapper .card_icon {
+  color: hsl(201deg, 11%, 66%);
+  font-size: 36px;
+}
+.tools .card_wrapper .card_title {
+  font-weight: 600;
+  font-size: 24px;
+  color: hsl(210deg, 10%, 33%);
+}
+.tools .card_wrapper .card_description {
+  color: hsl(201deg, 11%, 66%);
+  width: 100%;
+}
+
+.companies {
+  padding: 100px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding-top: 100px;
+  text-align: center;
+}
+.download_title {
+  font-weight: 600;
+  font-size: 36px;
+  color: hsl(210deg, 10%, 33%);
+}
+.download_description {
+  color: hsl(201deg, 11%, 66%);
+  width: 50%;
+}
+.download .btns {
+  display: flex;
+  gap: 20px;
+}
+.download .btns .btn {
+  width: 250px;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  border-radius: 40px;
+}
+.download .btns .btn-green {
+  background-color: hsl(171deg, 66%, 44%);
+  box-shadow: 1px 1px 5px hsla(171deg, 66%, 44%, 0.7);
+}
+.download .btns .btn-green:hover {
+  cursor: pointer;
+  background-color: hsla(171deg, 66%, 44%, 0.7);
+}
+.download .btns .btn-purple {
+  background-color: hsl(233deg, 100%, 69%);
+  box-shadow: 1px 1px 5px hsla(233deg, 100%, 69%, 0.7);
+}
+.download .btns .btn-purple:hover {
+  cursor: pointer;
+  background-color: hsla(233deg, 100%, 69%, 0.7);
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 100px;
+  padding: 50px 0;
+  background-color: #f1f1f1;
+}
+footer .logo img {
+  width: 50px;
+}
+footer .links {
+  display: flex;
+  gap: 100px;
+}
+footer .links .section {
+  display: flex;
+  flex-direction: column;
+}
+footer .links .section a {
+  padding: 20px;
+  text-decoration: none;
+  color: hsl(201deg, 11%, 66%);
+  font-weight: 600;
+}
+footer .links .section a:hover {
+  color: hsl(171deg, 66%, 44%);
+}
+footer .social {
+  display: flex;
+  gap: 20px;
+}
+footer .social a img {
+  cursor: pointer;
+}
+footer .social a img:hover {
+  filter: invert(52%) sepia(99%) saturate(314%) hue-rotate(121deg);
+}/*# sourceMappingURL=style.css.map */

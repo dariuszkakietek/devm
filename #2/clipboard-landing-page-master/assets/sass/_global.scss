@@ -1,0 +1,10 @@
+body{
+    font-family: $fontFamily;
+}
+
+
+@media (max-width: 768px) {
+    img.section-img {
+        width: 100%;
+    }
+}

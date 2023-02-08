@@ -1,0 +1,13 @@
+.download{
+    @include section-flex;
+    @include title-and-description(36px, 50%);
+
+    @include btns;
+
+    @media (max-width: 768px) {
+
+        &_description{
+            width: 90%;
+        }
+}
+}

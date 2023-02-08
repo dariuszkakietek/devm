@@ -1,0 +1,65 @@
+@mixin section-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding-top: 100px;
+}
+
+@mixin title-and-description($titleFontSize, $descriptionWidth){
+
+    text-align: center;
+
+    &_title{
+        font-weight: 600;
+        font-size: $titleFontSize;
+        color: $darkGrayishBlue;
+    }
+
+    &_description{
+        color: $grayishBlue;
+        width: $descriptionWidth;
+    }
+}
+
+@mixin btns{
+    .btns{
+        display: flex;
+        gap: 20px;
+        .btn{
+            width: 250px;
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            color: white;
+            border-radius: 40px;
+        }
+
+        .btn-green{
+            background-color: $strongCyan;
+            box-shadow: 1px 1px 5px $strongCyanTransparent;
+
+            &:hover{
+                cursor: pointer;
+                background-color: $strongCyanTransparent;
+            }
+        }
+
+        .btn-purple{
+            background-color: $lightBlue;
+            box-shadow: 1px 1px 5px $lightBlueTransparent;
+
+            &:hover{
+                cursor: pointer;
+                background-color: $lightBlueTransparent;
+            }
+        }
+    }
+
+    @media (max-width: 1280px) {
+        .btns{
+            flex-direction: column;
+        }
+    }
+}

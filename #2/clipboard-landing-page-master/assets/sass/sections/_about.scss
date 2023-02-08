@@ -1,0 +1,48 @@
+.about{
+
+    @include section-flex;
+    @include title-and-description(36px, 50%);
+
+    &_container{
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        width: 90%;
+    }
+
+    .text-part{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        .card{
+            @include title-and-description(24px, 70%);
+            text-align: left;
+        }
+    }
+
+    @media (max-width: 1280px) {
+        &_container{
+            flex-direction: column;
+        }
+
+        .text-part{
+            gap: 30px;
+            .card{
+                text-align: center;
+
+                &_description{
+                    padding: 10px 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .about{
+            &_description{
+                width: 90%;
+            }
+        }
+    }
+}
