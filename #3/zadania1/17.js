@@ -1,0 +1,20 @@
+// Jaki będzie wynik operacji i jakiego będzie on typu:
+console.log(5 / 2);
+console.log(1 + 1);
+console.log(1.0 + 1);
+console.log(2.0 + 2.0);
+console.log(1 + "2");
+console.log("2" / "2");
+console.log("2" / "0");
+console.log("2" + 2 + "2");
+console.log(2 + 2 + "2");
+console.log("napis" + 1);
+console.log("napis" + "napis");
+//console.log(True + True);
+console.log(5 % 2);
+console.log(10 % 2);
+console.log(20 % 30);
+console.log(100 % 3);
+console.log(3 ** 3);
+console.log(2 ** 2);
+console.log(2 ** 0);
